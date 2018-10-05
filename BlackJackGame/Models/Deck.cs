@@ -39,7 +39,15 @@ namespace BlackJackGame.Models
 
         public void Shuffle()
         {
-            throw new NotImplementedException();
+            int n = _cards.Count;
+            while (n > 1)
+            {
+                n--;
+                int k = _random.Next(n + 1);
+                BlackJackCard card = _cards[k];
+                _cards[k] = _cards[n];
+                _cards[n] = card;
+            }
         }
     }
 }

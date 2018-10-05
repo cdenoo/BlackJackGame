@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BlackJackGame.Models
 {
-    class Hand
+    public class Hand
     {
         private IList<BlackJackCard> _cards;
 
