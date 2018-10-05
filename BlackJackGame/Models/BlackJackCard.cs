@@ -11,7 +11,11 @@ namespace BlackJackGame.Models
         public int Value {
             get {
                 if (!FaceUp) return 0;
-                else return (int)this.FaceValue;
+                if((int)this.FaceValue > 10)
+                {
+                    return 10;
+                }
+                return (int)this.FaceValue;
             }
         }
 
