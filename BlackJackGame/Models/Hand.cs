@@ -32,7 +32,7 @@ namespace BlackJackGame.Models
             foreach(BlackJackCard card in _cards)
             {
                 if (card.FaceValue == FaceValue.Ace) ace = true;
-                total += (int)card.Value;
+                total += card.Value;
             }
             if (ace && total < 21) total += 10;
             Value = total;

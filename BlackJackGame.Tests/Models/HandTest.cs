@@ -97,8 +97,8 @@ namespace BlackJackGame.Tests.Models
         {
             _aHand.AddCard(new BlackJackCard(Suit.Hearts, FaceValue.Ace));
             _aHand.AddCard(new BlackJackCard(Suit.Spades, FaceValue.King));
-            _aHand.AddCard(new BlackJackCard(Suit.Clubs, FaceValue.King));
-            _aHand.AddCard(new BlackJackCard(Suit.Diamonds, FaceValue.Six));
+            _aHand.AddCard(new BlackJackCard(Suit.Clubs, FaceValue.Nine));
+            _aHand.AddCard(new BlackJackCard(Suit.Diamonds, FaceValue.Seven));
             _aHand.TurnAllCardsFaceUp();
             Assert.Equal(27, _aHand.Value);
         }
